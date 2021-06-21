@@ -201,42 +201,50 @@ class _FemaleBodyFatScreenState extends State<FemaleBodyFatScreen> {
               InkWell(
                   child: Flexible(
                       child: Column(
-                        children: [
-                          Container(
-                            child: image7,
-                          ),
-                          Text('35-39%'),
-                        ],
-                      )),
+
+                    children: [
+                      Container(
+                        child: image7,
+                      ),
+                      Text('35-39%'),
+                    ],
+                  )),
+
                   onTap: () {}),
               InkWell(
                   child: Flexible(
                       child: Column(
-                        children: [
-                          Container(
-                            child: image8,
-                          ),
-                          Text('40-44%'),
-                        ],
-                      )),
+
+                    children: [
+                      Container(
+                        child: image8,
+                      ),
+                      Text('40-44%'),
+                    ],
+                  )),
+
                   onTap: () {}),
               InkWell(
                 child: Flexible(
                     child: Column(
-                      children: [
-                        Container(
-                          child: image9,
-                        ),
-                        Text('45+'),
-                      ],
-                    )),
+
+                  children: [
+                    Container(
+                      child: image9,
+                    ),
+                    Text('45+'),
+                  ],
+                )),
+
                 onTap: () {},
               )
             ]),
           ],
         ),
         floatingActionButton:
-        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+
           SizedBox(
             width: 1,
           ),
@@ -249,12 +257,9 @@ class _FemaleBodyFatScreenState extends State<FemaleBodyFatScreen> {
           ),
           FloatingActionButton(
             child: Icon(Icons.arrow_forward_ios_rounded),
-            onPressed: () => {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => DietaryScreen()),
-              ),
-            },
+
+            onPressed: () => {},
+
           )
         ]));
   }
