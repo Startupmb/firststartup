@@ -196,46 +196,60 @@ class _FemaleBodyFatScreenState extends State<FemaleBodyFatScreen> {
                     onTap: () {}),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                InkWell(
-                    child: Flexible(
-                        child: Column(
-                      children: [
-                        Container(
-                          child: image7,
-                        ),
-                        Text('35-39%'),
-                      ],
-                    )),
-                    onTap: () {}),
-                InkWell(
-                    child: Flexible(
-                        child: Column(
-                      children: [
-                        Container(
-                          child: image8,
-                        ),
-                        Text('40-44%'),
-                      ],
-                    )),
-                    onTap: () {}),
-                InkWell(
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              InkWell(
                   child: Flexible(
                       child: Column(
                     children: [
                       Container(
-                        child: image9,
+                        child: image7,
                       ),
-                      Text('45+'),
+                      Text('35-39%'),
                     ],
                   )),
-                  onTap: () {},
-                )
-              ],
-            ),
+                  onTap: () {}),
+              InkWell(
+                  child: Flexible(
+                      child: Column(
+                    children: [
+                      Container(
+                        child: image8,
+                      ),
+                      Text('40-44%'),
+                    ],
+                  )),
+                  onTap: () {}),
+              InkWell(
+                child: Flexible(
+                    child: Column(
+                  children: [
+                    Container(
+                      child: image9,
+                    ),
+                    Text('45+'),
+                  ],
+                )),
+                onTap: () {},
+              )
+            ]),
           ],
-        ));
+        ),
+        floatingActionButton:
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          SizedBox(
+            width: 1,
+          ),
+          FloatingActionButton(
+            child: Icon(Icons.arrow_back_ios_rounded),
+            onPressed: () {},
+          ),
+          SizedBox(
+            width: 200,
+          ),
+          FloatingActionButton(
+            child: Icon(Icons.arrow_forward_ios_rounded),
+            onPressed: () => {},
+          )
+        ]));
   }
 }
