@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:startup_1/screens/dietary_preference.dart';
 
 class FemaleBodyFatScreen extends StatefulWidget {
   @override
@@ -128,33 +129,33 @@ class _FemaleBodyFatScreenState extends State<FemaleBodyFatScreen> {
                 InkWell(
                     child: Flexible(
                         child: Column(
-                      children: [
-                        Container(
-                          child: image1,
-                        ),
-                        Text('5-9%'),
-                      ],
-                    )),
+                          children: [
+                            Container(
+                              child: image1,
+                            ),
+                            Text('5-9%'),
+                          ],
+                        )),
                     onTap: () {}),
                 InkWell(
                     child: Flexible(
                         child: Column(
-                      children: [
-                        Container(child: image2),
-                        Text('10-14%'),
-                      ],
-                    )),
+                          children: [
+                            Container(child: image2),
+                            Text('10-14%'),
+                          ],
+                        )),
                     onTap: () {}),
                 InkWell(
                     child: Flexible(
                         child: Column(
-                      children: [
-                        Container(
-                          child: image3,
-                        ),
-                        Text('15-19%'),
-                      ],
-                    )),
+                          children: [
+                            Container(
+                              child: image3,
+                            ),
+                            Text('15-19%'),
+                          ],
+                        )),
                     onTap: () {})
               ],
             ),
@@ -164,78 +165,97 @@ class _FemaleBodyFatScreenState extends State<FemaleBodyFatScreen> {
                 InkWell(
                     child: Flexible(
                         child: Column(
-                      children: [
-                        Container(
-                          child: image4,
-                        ),
-                        Text('20-24%'),
-                      ],
-                    )),
+                          children: [
+                            Container(
+                              child: image4,
+                            ),
+                            Text('20-24%'),
+                          ],
+                        )),
                     onTap: () {}),
                 InkWell(
                     child: Flexible(
                         child: Column(
-                      children: [
-                        Container(
-                          child: image5,
-                        ),
-                        Text('25-29%'),
-                      ],
-                    )),
+                          children: [
+                            Container(
+                              child: image5,
+                            ),
+                            Text('25-29%'),
+                          ],
+                        )),
                     onTap: () {}),
                 InkWell(
                     child: Flexible(
                         child: Column(
-                      children: [
-                        Container(
-                          child: image6,
-                        ),
-                        Text('30-34%'),
-                      ],
-                    )),
+                          children: [
+                            Container(
+                              child: image6,
+                            ),
+                            Text('30-34%'),
+                          ],
+                        )),
                     onTap: () {}),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                InkWell(
-                    child: Flexible(
-                        child: Column(
-                      children: [
-                        Container(
-                          child: image7,
-                        ),
-                        Text('35-39%'),
-                      ],
-                    )),
-                    onTap: () {}),
-                InkWell(
-                    child: Flexible(
-                        child: Column(
-                      children: [
-                        Container(
-                          child: image8,
-                        ),
-                        Text('40-44%'),
-                      ],
-                    )),
-                    onTap: () {}),
-                InkWell(
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              InkWell(
                   child: Flexible(
                       child: Column(
-                    children: [
-                      Container(
-                        child: image9,
-                      ),
-                      Text('45+'),
-                    ],
-                  )),
-                  onTap: () {},
-                )
-              ],
-            ),
+                        children: [
+                          Container(
+                            child: image7,
+                          ),
+                          Text('35-39%'),
+                        ],
+                      )),
+                  onTap: () {}),
+              InkWell(
+                  child: Flexible(
+                      child: Column(
+                        children: [
+                          Container(
+                            child: image8,
+                          ),
+                          Text('40-44%'),
+                        ],
+                      )),
+                  onTap: () {}),
+              InkWell(
+                child: Flexible(
+                    child: Column(
+                      children: [
+                        Container(
+                          child: image9,
+                        ),
+                        Text('45+'),
+                      ],
+                    )),
+                onTap: () {},
+              )
+            ]),
           ],
-        ));
+        ),
+        floatingActionButton:
+        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          SizedBox(
+            width: 1,
+          ),
+          FloatingActionButton(
+            child: Icon(Icons.arrow_back_ios_rounded),
+            onPressed: () {},
+          ),
+          SizedBox(
+            width: 200,
+          ),
+          FloatingActionButton(
+            child: Icon(Icons.arrow_forward_ios_rounded),
+            onPressed: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => DietaryScreen()),
+              ),
+            },
+          )
+        ]));
   }
 }
