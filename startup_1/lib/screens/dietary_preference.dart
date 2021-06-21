@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:startup_1/screens/workout_frequency.dart';
+
+
+import 'workout_frequency.dart';
 
 class DietaryScreen extends StatefulWidget {
   @override
@@ -205,7 +209,12 @@ class _DietaryScreenState extends State<DietaryScreen> {
           ),
           FloatingActionButton(
             child: Icon(Icons.arrow_forward_ios_rounded),
-            onPressed: () => {},
+            onPressed: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => WorkoutFreqScreen()),
+              ),
+            },
           )
         ]));
   }
